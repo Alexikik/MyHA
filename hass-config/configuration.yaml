@@ -1,9 +1,24 @@
+# Loads default set of integrations. Do not remove.
 default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+
+### Mine ###
+wake_on_lan:
+switch:
+    - platform: wake_on_lan
+      mac: 74-4C-A1-C1-94-DB
+
 panel_iframe:
   configurator:
     title: Configurator
     icon: mdi:wrench
-    url: http://212.10.61.210:3218/
+    url: http://192.168.87.150:3218/
     require_admin: true
-
-wake_on_lan:
