@@ -14,7 +14,8 @@ scene: !include scenes.yaml
 wake_on_lan:
 switch:
     - platform: wake_on_lan
-      mac: 74-4C-A1-C1-94-DB
+      mac: 2C-F0-5D-86-27-F5
+      name: Desktop PC
 
 panel_iframe:
   configurator:
